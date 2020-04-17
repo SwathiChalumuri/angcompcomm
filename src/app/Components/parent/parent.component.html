@@ -1,0 +1,9 @@
+<div>
+    <p>parent works!</p> 
+    <!-- <input [(ngModel)]="Pname"> -->
+    
+    <p>{{emitdata}}</p>
+</div>
+
+
+<app-child [cNamefromP]="Pname" (cdatatoP)="getFromChild($event)"></app-child>
